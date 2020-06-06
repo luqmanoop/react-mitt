@@ -1,0 +1,17 @@
+{
+  "name": "react-mitt",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "parcel build lib.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
