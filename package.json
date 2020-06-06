@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build lib.tsx"
+  },
   "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.9.5"
   },
-  "scripts": {
-    "build": "parcel build lib.tsx"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "peerDependencies": {
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x"
+  }
 }
