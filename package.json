@@ -2,15 +2,19 @@
   "name": "react-mitt",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build lib.tsx"
+    "build": "parcel build src/lib.tsx"
   },
   "dependencies": {},
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.9.5"
   },
