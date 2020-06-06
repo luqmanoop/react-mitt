@@ -14,5 +14,12 @@
     "react": {
       "version": "detect"
     }
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "react/prop-types": [2, { "ignore": ["children"] }]
   }
 }
