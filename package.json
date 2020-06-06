@@ -3,11 +3,22 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "events",
+    "eventemitter",
+    "emitter",
+    "pubsub",
+    "react",
+    "reactmitt"
+  ],
+  "author": "Luqman Olushi <olushilukmon03@gmail.com> (https://github.com/codeshifu)",
   "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
-    "build": "parcel build src/lib.tsx",
+    "build": "parcel build src/index.tsx",
     "lint": "eslint './src/**/*.{ts,tsx}' --quiet --fix"
   },
   "dependencies": {
