@@ -1,8 +1,11 @@
 {
   "name": "react-mitt",
   "version": "0.0.1-0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "React event emitter / pubsub 👉🏻👈🏽",
+  "source": "src/index.tsx",
+  "main": "dist/react-mitt.js",
+  "module": "dist/react-mitt.es.js",
+  "types": "dist/react-mitt.d.ts",
   "keywords": [
     "events",
     "eventemitter",
@@ -19,9 +22,8 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "copy": "cpy src/index.d.ts dist",
-    "build": "parcel build src/index.tsx --no-source-maps",
-    "bundle": "npm-run-all clean build copy",
+    "build": "microbundle --external react,react-dom --compress --sourcemap false --jsx React.createElement -f es,cjs",
+    "bundle": "npm-run-all clean build",
     "lint": "eslint './src/**/*.{ts,tsx}' --quiet --fix",
     "release": "npm run bundle && np",
     "test": "jest"
@@ -37,16 +39,14 @@
     "@types/react": "^16.9.35",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
-    "cpy-cli": "^3.1.1",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
     "jest": "^26.0.1",
+    "microbundle": "^0.12.0",
     "np": "^6.2.3",
     "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-externals": "^0.4.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -58,9 +58,5 @@
   "peerDependencies": {
     "react": "^16.8.x",
     "react-dom": "^16.8.x"
-  },
-  "externals": [
-    "react",
-    "react-dom"
-  ]
+  }
 }
