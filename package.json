@@ -5,7 +5,7 @@
   "source": "src/index.tsx",
   "main": "dist/react-mitt.js",
   "module": "dist/react-mitt.es.js",
-  "types": "dist/react-mitt.d.ts",
+  "types": "dist/index.d.ts",
   "keywords": [
     "events",
     "eventemitter",
@@ -18,7 +18,8 @@
   "license": "MIT",
   "files": [
     "dist",
-    "src"
+    "src",
+    "dist/index.d.ts"
   ],
   "scripts": {
     "clean": "rimraf dist",
