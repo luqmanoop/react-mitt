@@ -2,11 +2,11 @@
 
 > React event emitter / pubsub
 
-A react port of the awesome [mitt](https://github.com/developit/mitt) library
+A react wrapper for the awesome [mitt](https://github.com/developit/mitt) library
 
 ## Install
 
-```
+```sh
 $ npm install react-mitt
 ```
 
@@ -61,8 +61,8 @@ function ComponentB() {
 
 The `useMitt` hook has the following signature
 
-```
+```js
 const { emitter } = useMitt()
 ```
 
-For usage of the `emitter` object, see **mitt** API [docs](https://github.com/developit/mitt#api)
+For usage of the **emitter** object, see **mitt** API [docs](https://github.com/developit/mitt#api)
