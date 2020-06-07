@@ -1,6 +1,6 @@
 {
   "name": "react-mitt",
-  "version": "0.0.1-0",
+  "version": "0.0.1-1",
   "description": "React event emitter / pubsub 👉🏻👈🏽",
   "source": "src/index.tsx",
   "main": "dist/react-mitt.js",
