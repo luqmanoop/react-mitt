@@ -8,6 +8,8 @@
 
 A react wrapper for the awesome [mitt](https://github.com/developit/mitt) library
 
+Live demo https://codesandbox.io/s/react-mitt-demo-n11ii
+
 ## Install
 
 ```sh
