@@ -1,6 +1,10 @@
 # react-mitt
 
 > React event emitter / pubsub
+<div>
+<img alt="react-mitt build status" src="https://img.shields.io/travis/codeshifu/react-mitt.svg?logo=travis">
+	<img alt="react-mitt code coverage" src="https://img.shields.io/coveralls/github/codeshifu/react-mitt.svg?style=popout">
+</div>
 
 A react wrapper for the awesome [mitt](https://github.com/developit/mitt) library
 

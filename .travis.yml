@@ -1,7 +1,11 @@
 language: node_js
+node_js:
+  - "13"
 notifications:
   email: false
 script:
   - npm run test
 after_success:
   - npm run coverage
+branches:
+  only: master

@@ -27,7 +27,8 @@
     "bundle": "npm-run-all clean build",
     "lint": "eslint './src/**/*.{ts,tsx}' --quiet --fix",
     "release": "npm run bundle && np",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "dependencies": {
     "mitt": "^1.2.0"
@@ -40,6 +41,7 @@
     "@types/react": "^16.9.35",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
+    "coveralls": "^3.1.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
