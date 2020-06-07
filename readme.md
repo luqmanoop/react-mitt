@@ -66,3 +66,6 @@ const { emitter } = useMitt()
 ```
 
 For usage of the **emitter** object, see **mitt** API [docs](https://github.com/developit/mitt#api)
+
+## License
+[MIT License](https://github.com/codeshifu/react-mitt/blob/master/license)
